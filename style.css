@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.center {
+  text-align: center;
+}
+
+.grey-background {
+  background-color: #1a242c;
+}
+
+.black-background {
+  background-color: black;
+}
+
+.navbar {
+  list-style-type: none;
+  float: right;
+}
+
+.navbar li {
+  display: inline;
+}
+
+#message {
+  /* margin-top: 100px; */
+}
+
+#home-content {
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 50px;
+  width: 80%;
+}
+
+#code--image {
+  width: 500px;
+  height: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#btn--portfolio {
+  position: absolute;
+  right: 35%;
+  bottom: 35%;
+}
