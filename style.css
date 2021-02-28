@@ -3,9 +3,19 @@
   padding: 0;
 }
 
+/* Page Styling */
 body {
-  background-color: black;
   color: white;
+  height: 100%;
+  /* background-color is used in case a browser doesnt support gradients */
+  background-color: rgb(12, 0, 122);
+  background-image: linear-gradient(to bottom right, rgb(12, 0, 122), #35b993);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+p {
+  color: rgb(12, 0, 122);
 }
 
 .center {
@@ -13,42 +23,106 @@ body {
 }
 
 .grey-background {
-  background-color: #1a242c;
+  background-color: #8ca3b6;
 }
 
 .black-background {
   background-color: black;
 }
 
+/* Navbar Setup */
+
 .navbar {
   list-style-type: none;
-  float: right;
+  overflow: hidden;
+  background-color: rgb(12, 0, 122);
+  border-bottom: solid;
+  border-width: 3px;
+  border-color: #35b993;
+  margin-bottom: 15px;
 }
 
 .navbar li {
-  display: inline;
+  float: right;
 }
 
-#message {
-  /* margin-top: 100px; */
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 15px;
 }
 
-#home-content {
-  margin-left: 100px;
-  margin-right: 100px;
-  margin-top: 50px;
-  width: 80%;
+li a:hover {
+  background-color: #35b993;
+  color: rgb(12, 0, 122);
 }
+
+.active {
+  background-color: darkred;
+}
+
+/* Page Structure */
+
+header {
+  margin-bottom: 25px;
+}
+section {
+  width: 600px;
+  margin: auto;
+  border-radius: 15px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: rgb(12, 0, 122);
+}
+
+/* Home Page Styling */
 
 #code--image {
   width: 500px;
   height: auto;
   margin-top: 15px;
   margin-bottom: 15px;
+  border-radius: 15px;
 }
 
 #btn--portfolio {
-  position: absolute;
-  right: 35%;
-  bottom: 35%;
+  border-radius: 15px;
+  margin-left: 400px;
+  font-size: 15px;
+  padding: 5px;
+  margin-bottom: 5px;
+  color: rgb(12, 0, 122);
+  background-color: #35b993;
+  border-style: solid;
+  border-width: 3px;
+  border-color: rgb(12, 0, 122);
+}
+
+/* About Page Styling */
+
+#will--image {
+  width: 200px;
+  height: auto;
+  margin-bottom: 5px;
+}
+
+.about-content {
+  width: 750px;
+  /* padding-left: 25px;
+  padding-right: 25px; */
+  margin-bottom: 15px;
+}
+
+.about-content p {
+  text-align: left;
+  margin-bottom: 10px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.about-content h2 {
+  color: rgb(139, 0, 0);
 }

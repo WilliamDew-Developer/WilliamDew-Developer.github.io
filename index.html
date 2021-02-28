@@ -7,17 +7,14 @@
     <link href="style.css" rel="stylesheet" />
     <title>William Dew</title>
   </head>
-  <body class="grey-background">
+  <body>
     <header>
-      <!-- TODO Nav Bar Goes Here -->
-      <div>
-        <ul class="navbar">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
+      <ul class="navbar">
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
+      </ul>
 
       <!-- TODO Display Message -->
       <div id="message">
@@ -25,14 +22,23 @@
           Aspiring Frontend Developer based in Atlanta, Georgia.
         </h1>
         <h1 class="center">
-          Seeking pporrtunities to show my skill and learn something new.
+          Seeking opporrtunities to show my skill and learn something new.
         </h1>
       </div>
     </header>
 
     <main class="center" id="home-content">
-      <img id="code--image" src="images/programming.gif" />
-      <button id="btn--portfolio">View Portfolio =></button>
+      <section class="grey-background">
+        <img id="code--image" src="images/programming.gif" />
+        <p></p>
+        <button
+          id="btn--portfolio"
+          onclick="location.href='portfolio.html'"
+          type="button"
+        >
+          View Portfolio =>
+        </button>
+      </section>
     </main>
     <script src="script.js"></script>
   </body>
